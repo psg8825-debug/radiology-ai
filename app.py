@@ -16,7 +16,7 @@ except KeyError as e:
 
 # AI 모델 및 데이터베이스 초기화
 genai.configure(api_key=GEMINI_API_KEY)
-model = genai.GenerativeModel('gemini-1.5-pro')
+model = genai.GenerativeModel('gemini-1.5-flash')
 supabase: Client = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 # 사이드바 메뉴 구성
